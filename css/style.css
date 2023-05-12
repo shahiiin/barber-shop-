@@ -17,6 +17,24 @@
     --border: .1rem solid #aaa;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
+.welcome{
+    background-color:var(--pomp-and-power) ;
+}
+
+.center-side{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12rem;
+    align-items: center;
+}
+
+.center-side p{
+    font-size: 3.3rem;
+}
+
+.left-side img{
+    height: 79%;
+}
 
 * {
     font-family: digikala;
