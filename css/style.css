@@ -1,8 +1,18 @@
 @font-face {
     font-family: digikala;
     src: url(../font/Digikala\ -_font.ttf);
+   
   }
-
+  @font-face {
+    font-family: nastalig;
+    src: url(../font/Dima\ Shekasteh.ttf);
+  }
+  .logo{
+    font-family: nastalig !important;
+  }
+a{
+    text-decoration: none;
+}
 :root {
 
     --main-color: #755d89;
