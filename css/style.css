@@ -5,7 +5,7 @@
 
 :root {
 
-    --main-color: #c3a9d8;
+    --main-color: #755d89;
     --primary-color: #8a6d46;
     --hover: #5a4d3e;
     --black: #2a201c;
@@ -13,7 +13,7 @@
     --light-bg: #f3efec;
     --dark-bg: rgba(0, 0, 0, .7);
     --dark-purple: #5f1159 ;
-    --pomp-and-power: #d2c2db;
+    --pomp-and-power: #baadc2;
     --border: .1rem solid #aaa;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
@@ -197,7 +197,7 @@ section {
 
 .about .row .content p {
     font-size: 1.6rem;
-    color: #444;
+    color: var(--dark-purple);
     padding: 1rem 0;
     line-height: 1.8;
 }
@@ -214,6 +214,7 @@ section {
     text-align: center;
     background: var(--light-bg);
     padding: 3rem 2rem;
+    border-radius: 50%;
 }
 
 .about .content .icons-container .icons img {
@@ -223,7 +224,7 @@ section {
 .about .content .icons-container .icons h3 {
     padding-top: 1rem;
     font-size: 1.6rem;
-    color: #444;
+    color: var(--dark-purple);
     font-weight: normal;
     text-transform: capitalize;
 }
@@ -307,6 +308,7 @@ section {
 
 .styles .box-container .box .image img {
     object-fit: cover;
+    border-radius: 13px;
 }
 
 .styles .box-container .box .content {
@@ -315,14 +317,14 @@ section {
 
 .styles .box-container .box .content .title {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: var(--dark-purple);
     text-transform: capitalize;
 }
 
 .styles .box-container .box .content p {
     font-size: 1.6rem;
     line-height: 1.8;
-    color: #444;
+    color: var(--dark-purple);
     padding: 1rem 0;
 }
 
@@ -331,6 +333,8 @@ section {
 /* pricing */
 
 .pricing {
+    background-image: url(../images/about-left.png);
+    background-repeat: no-repeat;
     background-color: var(--pomp-and-power);
 }
 
@@ -342,7 +346,7 @@ section {
 }
 
 .pricing .box-container .box {
-    height: 500px;
+    height: 520px;
     width: 300px;
     margin: 20px 40px;
     border-radius: 10px;
@@ -350,8 +354,7 @@ section {
     text-align: center;
     overflow: hidden;
     position: relative;
-    z-index: 1;
-    background: var(--primary-color);
+    background: var(--dark-purple);
 }
 
 .pricing .box-container .box::before,
@@ -365,13 +368,13 @@ section {
 }
 
 .pricing .box-container .box::before {
-    background: var(--light-bg);
+    background: linear-gradient(120deg, var(--primary-color) 40%, var(--white) 100%);
     top: -10%;
     left: 80%;
 }
 
 .pricing .box-container .box::after {
-    background: var(--main-color);
+    background: linear-gradient(120deg, var(--primary-color) 40%, var(--white) 100%);
     bottom: -10%;
     right: 80%;
 }
@@ -379,7 +382,7 @@ section {
 .pricing .box-container .box .title {
     margin: 30px 0;
     font-size: 26px;
-    color: var(--main-color);
+    color: var(--white);
     text-transform: capitalize;
 }
 
@@ -387,7 +390,7 @@ section {
     height: 160px;
     width: 160px;
     color: var(--white);
-    background: var(--main-color);
+    background: linear-gradient(120deg, var(--primary-color) 40%, var(--white) 100%);
     padding: 57px 0 0;
     margin: 0 auto 25px;
     border-radius: 50%;
@@ -406,7 +409,7 @@ section {
 }
 
 .pricing .box-container .box ul li {
-    text-align: left;
+    text-align: right;
     font-size: 16px;
     padding-left: 45px;
     margin: 20px auto;
@@ -416,20 +419,20 @@ section {
 }
 
 .pricing .box-container .box ul li i {
-    color: var(--main-color);
+    color: var(--white);
     padding: 0 10px;
 }
 
 .pricing .box-container .box button {
-    height: 40px;
+    height: 30px;
     width: 140px;
     outline: none;
     border-radius: 50px;
     text-transform: capitalize;
     cursor: pointer;
     background: none;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
+    color: var(--white);
+    border: 2px solid var(--white);
     font-size: 17px;
     font-weight: bold;
     transition: .2s linear;
@@ -489,7 +492,7 @@ section {
 }
 
 .blogs .box-container .box .content span {
-    color: var(--main-color);
+    color: var(--white);
     display: block;
     padding-top: 1rem;
     font-size: 2rem;
@@ -503,14 +506,16 @@ section {
     padding: 1rem 0;
 }
 
+#booking{
+    color: var(--white);
+}
+
 /* blog */
 
 /* visit */
 
 .visit {
-    background: url('../images/visit.png');
-    background-size: cover;
-    background-position: center;
+background-color: var(--pomp-and-power);
 }
 
 .visit .row {
@@ -537,14 +542,14 @@ section {
 
 .visit .row form {
     flex: 1 1 40rem;
-    border: 0.1rem solid var(--main-color);
+    border: 0.1rem solid var(--white);
     padding: 2rem;
 }
 
 .visit .row form h3 {
     font-size: 2.5rem;
     text-align: center;
-    color: var(--main-color);
+    color: var(--white);
     padding-bottom: 1rem;
     text-transform: uppercase;
 }
@@ -554,15 +559,19 @@ section {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: var(--main-color);
+    background: var(--white);
     border: var(--border);
+}
+
+.visit .row form .inputBox input::placeholder{
+    color: var(--dark-purple);
 }
 
 .visit .row form .inputBox input {
     width: 100%;
     padding: 2rem;
     font-size: 1.7rem;
-    color: var(--white);
+    color: var(--dark-purple);
     text-transform: none;
     background: none;
 }
@@ -590,14 +599,14 @@ section {
 .review .box-container .box p {
     font-size: 1.5rem;
     line-height: 1.8;
-    color: var(--black);
+    color: var(--dark-purple);
     padding: 2rem 0;
 }
 
 .review .box-container .box h3 {
     padding: 1rem 0;
     font-size: 2rem;
-    color: var(--black);
+    color: var(--dark-purple);
     text-transform: capitalize;
 }
 
@@ -610,7 +619,7 @@ section {
 
 /* footer */
 .footer {
-    background: var(--main-color);
+    background: var(--white);
     text-align: center;
 }
 
@@ -623,14 +632,14 @@ section {
 .footer .box-container .box h3 {
     font-size: 2.2rem;
     text-transform: capitalize;
-    color: var(--primary-color);
+    color: var(--dark-purple);
     padding: 1rem 0;
 }
 
 .footer .box-container .box p {
     font-size: 1.5rem;
     line-height: 2;
-    color: var(--black);
+    color: var(--dark-purple);
     padding: 1rem 0;
 }
 
