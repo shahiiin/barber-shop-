@@ -1,21 +1,26 @@
 @font-face {
     font-family: digikala;
     src: url(../font/Digikala\ -_font.ttf);
-   
-  }
-  @font-face {
+
+}
+
+@font-face {
     font-family: nastalig;
     src: url(../font/Dima\ Shekasteh.ttf);
-  }
-  .logo{
+}
+
+.logo {
     font-family: nastalig !important;
-  }
-  body{
+}
+
+body {
     background-image: linear-gradient(to bottom right, #fff, #94999f);
-  }
-a{
+}
+
+a {
     text-decoration: none;
 }
+
 :root {
 
     --main-color: #755d89;
@@ -25,37 +30,36 @@ a{
     --white: #fff;
     --light-bg: #f3efec;
     --dark-bg: rgba(0, 0, 0, .7);
-    --dark-purple: #5f1159 ;
+    --dark-purple: #5f1159;
     --pomp-and-power: #baadc2;
     --border: 0.2rem solid #8a6d46;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
+
 /* .welcome{
     background-color:var(--pomp-and-power) ;
 } */
 
-.right-side{
+.right-side {}
 
-}
-
-.left-side{
+.left-side {
     background-image: url(../images/about-left.png);
     background-repeat: no-repeat;
 }
 
-.left-side .welcome-title{
+.left-side .welcome-title {
     margin-top: 9rem;
     font-family: nastalig !important;
     color: var(--dark-purple);
 }
 
-.left-side p{
+.left-side p {
     font-size: 5rem;
     font-family: nastalig !important;
     color: var(--dark-purple);
 }
 
-.left-side span{
+.left-side span {
     font-size: 8rem;
     margin-right: 18rem;
     font-family: nastalig !important;
@@ -300,8 +304,9 @@ section {
     width: 100%;
     object-fit: cover;
     border-radius: 13px;
-   
+
 }
+
 .box-container .box .image img {
     object-fit: cover;
     border-radius: 13px;
@@ -560,7 +565,7 @@ section {
     padding: 1rem 0;
 }
 
-#booking{
+#booking {
     color: var(--white);
 }
 
@@ -596,7 +601,7 @@ section {
 
 .visit .row form {
     flex: 1 1 40rem;
-    border:var(--border);
+    border: var(--border);
     border-radius: 8px;
     padding: 2rem;
 }
@@ -618,7 +623,7 @@ section {
     border: var(--border);
 }
 
-.visit .row form .inputBox input::placeholder{
+.visit .row form .inputBox input::placeholder {
     color: var(--dark-purple);
 }
 
@@ -675,7 +680,7 @@ section {
 
 /* footer */
 .footer {
- 
+
     text-align: center;
 }
 
@@ -769,7 +774,8 @@ section {
     section {
         padding: 3rem 2rem;
     }
-    .home .content{
+
+    .home .content {
         margin-right: -5px;
     }
 
@@ -833,4 +839,28 @@ section {
         font-size: 4.5rem;
     }
 
+    .pricing .box-container .box .price {
+        height: 65px;
+        width: 71px;
+        color: var(--white);
+        background: linear-gradient(120deg, var(--primary-color) 40%, var(--white) 100%);
+        padding: 14px 0 0;
+        margin: 0 auto 25px;
+        border-radius: 50%;
+    }
+
+    .pricing .box-container .box {
+        height: 400px;
+    }
+
+    .pricing .box-container .box .price .amount {
+        font-size: 20px;
+    }
+    .pricing .box-container .box .price .currency {
+        font-size: 18px;
+    }
+
+.visit .row .image img {
+    display: none;
+}
 }
