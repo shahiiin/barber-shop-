@@ -12,8 +12,8 @@
     --white: #fff;
     --light-bg: #f3efec;
     --dark-bg: rgba(0, 0, 0, .7);
-    --dark-purple: #512d63 ;
-    --: ;
+    --dark-purple: #5f1159 ;
+    --pomp-and-power: #d2c2db;
     --border: .1rem solid #aaa;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
@@ -90,7 +90,7 @@ section {
     top: 0;
     left: 0;
     right: 0;
-    background: var(--main-color);
+    background: var(--white);
     z-index: 1000;
 }
 
@@ -145,6 +145,7 @@ section {
 
 .home .content {
     max-width: 60rem;
+    margin-right: 270px;
 }
 
 .home .content span {
@@ -166,9 +167,9 @@ section {
 
 /* about */
 
-/* .about {
-    background-color: #9b8ca2;
-} */
+.about {
+    background-color: var(--pomp-and-power);
+}
 
 .about .row {
     display: flex;
@@ -233,7 +234,7 @@ section {
 /* services */
 
 .services {
-    background-color: var(--main-color);
+    background-color: var(--pomp-and-power);
 }
 
 .services .box-container {
@@ -289,7 +290,7 @@ section {
 /* styles */
 
 .styles {
-    background: var(--light-bg);
+    background: var(--pomp-and-power);
 }
 
 .styles .box-container {
@@ -330,8 +331,7 @@ section {
 /* pricing */
 
 .pricing {
-    background: url('../images/pricing.jpg');
-    background-attachment: fixed;
+    background-color: var(--pomp-and-power);
 }
 
 .pricing .box-container {
@@ -443,6 +443,10 @@ section {
 /* pricing */
 
 /* blog */
+
+.blogs{
+    background-color: var(--pomp-and-power);
+}
 
 .blogs .box-container {
     display: grid;
@@ -566,6 +570,10 @@ section {
 /* visit */
 
 /* review  */
+
+.review{
+    background-color: var(--pomp-and-power);
+}
 
 .review .box-container {
     display: grid;
@@ -695,6 +703,9 @@ section {
 
     section {
         padding: 3rem 2rem;
+    }
+    .home .content{
+        margin-right: -5px;
     }
 
 }
