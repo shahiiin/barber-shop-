@@ -214,6 +214,7 @@ section {
     text-align: center;
     background: var(--light-bg);
     padding: 3rem 2rem;
+    border-radius: 50%;
 }
 
 .about .content .icons-container .icons img {
@@ -433,6 +434,7 @@ section {
     font-size: 17px;
     font-weight: bold;
     transition: .2s linear;
+    margin-bottom: 5%;
 }
 
 .pricing .box-container .box button:hover {
